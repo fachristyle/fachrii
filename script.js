@@ -63,7 +63,8 @@ const phrases = [
     "Currently listening to my playlist",
     "Favorite song of the week",
     "Music keeps me creative",
-    "Teddy Swims - Lose Control"
+    "Create by Nerusen",
+    "Thank you:)",
 ];
 let phraseIndex = 0;
 let charIndex = 0;
