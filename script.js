@@ -63,8 +63,7 @@ const phrases = [
     "Currently listening to my playlist",
     "Favorite song of the week",
     "Music keeps me creative",
-    "By Nerusen Takahashi",
-    "Thank You:)",
+    "Teddy Swims - Lose Control"
 ];
 let phraseIndex = 0;
 let charIndex = 0;
@@ -98,4 +97,4 @@ function typeWriter() {
 }
 
 // Start typewriter effect
-setTimeout(typeWriter, 3000);
+setTimeout(typeWriter, 6000);

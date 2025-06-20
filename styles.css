@@ -2,21 +2,16 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 :root {
     --primary: #4361ee;
-    --secondary: #232a52;
-    --accent: #4c93f0;
-    --dark: #101013;
+    --secondary: #3a0ca3;
+    --accent: #4cc9f0;
+    --dark: #1a1a2e;
     --light: #f5f7fa;
     --text-light: #333;
     --text-dark: #fff;
-    --yuhu: #ffff;
-    --laut:#48D0EA;
-    --laut2:#00459C;
-    
 }
 
 /* ===== LOADING SCREEN ===== */
@@ -223,7 +218,7 @@ body.dark-mode {
 }
 
 .dark-mode .nav-content {
-    background: rgba(39, 39, 71, 0.9);
+    background: rgba(26, 26, 46, 0.9);
 }
 
 .dark-mode .nav-link {
@@ -231,7 +226,7 @@ body.dark-mode {
 }
 
 .dark-mode .nav-link:hover {
-    background: rgba(71, 81, 138, 0.507);
+    background: rgba(67, 97, 238, 0.3);
 }
 
 /* ===== SCROLLING TEXT ===== */
@@ -255,19 +250,19 @@ body.dark-mode {
     display: inline-block;
     padding: 8px 20px;
     margin: 0 10px;
-    background: rgba(151, 151, 151, 0.1);
+    background: rgba(67, 97, 238, 0.1);
     border-radius: 30px;
-    border: 0.5px solid var(--text-light);
-    color: var(--text-light);
+    border: 2px solid var(--primary);
+    color: var(--primary);
     font-weight: 600;
     position: relative;
     transition: all 0.5s ease;
 }
 
 .dark-mode .scrolling-text {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: var(--yuhu);
-    color: var(--yuhu);
+    background: rgba(74, 201, 240, 0.1);
+    border-color: var(--accent);
+    color: var(--accent);
 }
 
 @keyframes scrollText {
@@ -290,10 +285,10 @@ body.dark-mode {
     height: 180px;
     border-radius: 50%;
     padding: 0px;
-    background: linear-gradient(40deg, var(--primary), var(--secondary));
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
     margin-bottom: 20px;
     position: relative;
-    box-shadow: 0 30px 30px rgba(61, 97, 255, 0.3);
+    box-shadow: 0 30px 30px rgba(67, 97, 238, 0.3);
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -302,7 +297,7 @@ body.dark-mode {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: linear-gradient(20deg, 
+    background: linear-gradient(25deg, 
         var(--primary), 
         var(--secondary), 
         var(--accent), 
@@ -323,8 +318,8 @@ body.dark-mode {
 }
 
 .profile-img-container:hover {
-    transform: translateY(0px) scale(1.05);
-    box-shadow: 0 40px 40px rgba(81, 107, 209, 0.4);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(67, 97, 238, 0.4);
 }
 
 .profile-img {
@@ -332,7 +327,7 @@ body.dark-mode {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid white;
+    border: 0px solid white;
     transition: all 0.3s ease;
 }
 
@@ -344,16 +339,17 @@ body.dark-mode {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 5px;
-    background: linear-gradient(to right, var(--laut), var(--primary));
+    background: linear-gradient(to right, var(--primary), var(--accent));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     animation: titleGlow 2s ease-in-out infinite alternate;
+    transition: background 0.5 ease;
 }
 
 @keyframes titleGlow {
-    from { text-shadow: 0 0 5px rgba(68, 110, 248, 0.521); }
-    to { text-shadow: 0 0 15px rgba(139, 172, 231, 0.603); }
+    from { text-shadow: 0 0 5px rgba(67, 97, 238, 0.3); }
+    to { text-shadow: 0 0 15px rgba(74, 201, 240, 0.5); }
 }
 
 .subtitle {
@@ -366,16 +362,16 @@ body.dark-mode {
 /* ===== SCROLLING GALLERY ===== */
 .gallery-container {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     overflow: hidden;
-    margin: 50px 0;
+    margin: 30px 0;
     position: relative;
 }
 
 .gallery-track {
     display: flex;
-    gap: 25px;
-    padding: 20px 0;
+    gap: 20px;
+    padding: 10px 0;
     animation: scroll 30s linear infinite;
 }
 
@@ -383,7 +379,7 @@ body.dark-mode {
     flex: 0 0 auto;
     width: 150px;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -542,8 +538,8 @@ body.dark-mode {
 .typewriter-text {
     font-size: 1.1rem;
     font-weight: 500;
-    color: var(--dark);
-    border-right: 2px solid var(--dark);
+    color: var(--primary);
+    border-right: 2px solid var(--primary);
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
@@ -551,8 +547,8 @@ body.dark-mode {
 }
 
 .dark-mode .typewriter-text {
-    color: var(--yuhu);
-    border-right-color: var(--yuhu);
+    color: var(--accent);
+    border-right-color: var(--accent);
 }
 
 /* ===== SPOTIFY PLAYER ===== */
